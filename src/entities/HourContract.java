@@ -1,15 +1,13 @@
+
 package entities;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class HourContract {
 
 	private Date date;
 	private Double valuePerHour;
 	private Integer hours;
-//	private List<> Contract = new ArrayList<>();
 
 	public HourContract() {
 	}
@@ -44,7 +42,7 @@ public class HourContract {
 		this.hours = hours;
 	}
 
-	public Double totalValue() {
-		return hours * valuePerHour;
+	public double totalValue() {
+		return valuePerHour * hours;
 	}
 }
